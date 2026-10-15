@@ -2,7 +2,7 @@
 
 ## 1. Contextualizar
 
-  O objetivo dessa atividade é analisar, por meio de um projeto de arduino simples, sua possível aplicação no nosso projeto. Nesse caso, temos um liga e desliga do LED, que, na interpretação do nosso projeto poderia indicar o estado do dispositivo. No código, há um loop que descreve que o LED fica acesso a cada 0,2 segundos e permanece desligado por 1,8 segundos. O critério de aceitação é exatamente esse, juntamente com a definição do PINO_LED na porta 8 e a corrente calculada abaixo de 20mA.
+O objetivo dessa atividade é analisar, por meio de um projeto de arduino simples, sua possível aplicação no nosso projeto. Nesse caso, temos um liga e desliga do LED, que, na interpretação do nosso projeto poderia indicar o estado do dispositivo. No código, há um loop que descreve que o LED fica acesso a cada 0,2 segundos e permanece desligado por 1,8 segundos. O critério de aceitação é exatamente esse, juntamente com a definição do PINO_LED na porta 8 e a corrente calculada abaixo de 20mA.
 Pretendo delegar à IA o que não consigo deduzir logicamente, fazendo uma pergunta descrita no tópico seguinte e entender melhor coisa
 
 ## 2. Consultar
@@ -49,10 +49,25 @@ Ao contrário do que a frase afirma, o simulador Wokwi altera sim a intensidade 
 
 https://wokwi.com/projects/477967199508674561
 
+![alt text](<Captura de tela 2026-10-15 141422.png>)
+
 ## 6. Comprovar
 
 Qual corrente passa pelo LED com 330 Ω? Escreva o cálculo e depois confira na animação circuito-led.
 
+Se U = R . I
+
+Temos que a tensão sobre o resistor é de 5 - 2, sendo 3 V.
+
+Substituindo 3 = 330 . I 
+I = 0,00909 aprox 9,1 mA
+
 Por que um resistor de 0 Ω queima o LED na placa real?
 
+Um resistor de 0 Ω faria com que a corrente inteira passasse para o LED, dando uma descarga maior do que pode receber.
+
 O que muda no código se o LED for para o pino 12?
+
+O código apenas trocaria a parte:
+<const int PINO_LED = 8;> por
+<const int PINO_LED = 12;>
