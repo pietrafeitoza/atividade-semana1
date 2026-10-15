@@ -69,5 +69,5 @@ Um resistor de 0 Ω faria com que a corrente inteira passasse para o LED, dando 
 O que muda no código se o LED for para o pino 12?
 
 O código apenas trocaria a parte:
-<const int PINO_LED = 8;> por
-<const int PINO_LED = 12;>
+`const int PINO_LED = 8;` por
+`const int PINO_LED = 12;`
