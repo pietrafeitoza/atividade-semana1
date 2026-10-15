@@ -7,7 +7,9 @@ Pretendo delegar à IA o que não consigo deduzir logicamente, fazendo uma pergu
 
 ## 2. Consultar
    "Eu poderia colocar dois resistores ligado a um led? E por quê alguém faria isso?"
+
 Resposta Gemini:
+
 
 Sim, você pode colocar dois resistores ligados a um mesmo LED.
 
@@ -40,3 +42,17 @@ Um resistor fixo garante que o LED nunca receba corrente excessiva, enquanto um 
 A afirmação técnica que quero confrontar/conferir:
 
 "a animação circuito-led do material de apoio: mova o resistor para 100 Ω e para 1 kΩ e compare a corrente com o seu cálculo. O Wokwi não muda o brilho do LED com o valor do resistor nem mede corrente no Uno, então essa conferência é por cálculo e pela animação."
+
+Ao contrário do que a frase afirma, o simulador Wokwi altera sim a intensidade e a renderização do LED de acordo com a resistência, simulando como acontece realmente na vida real. De fato, a placa Arduino Uno no Wokwi não possui um instrumento de medição embutido no próprio chip para mostrar a corrente no pino, sendo necessário usar o cálculo teórico ou adicionar um componente de amperímetro para conferir a corrente que flui no circuito.
+
+## 4. Construir
+
+https://wokwi.com/projects/477967199508674561
+
+## 6. Comprovar
+
+Qual corrente passa pelo LED com 330 Ω? Escreva o cálculo e depois confira na animação circuito-led.
+
+Por que um resistor de 0 Ω queima o LED na placa real?
+
+O que muda no código se o LED for para o pino 12?
